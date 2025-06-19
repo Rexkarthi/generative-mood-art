@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Generative Mood Art</title>
+  
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.sound.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/face-api.js@0.22.2/dist/face-api.min.js"></script>
+</head>
+<body class="light">
+  <div class="container">
+    <header>
+      <h1>🎨 Generative Mood Art</h1>
+      <center><h2>it's me yours rexii</h2></center>
+      <p>Visualize your emotions and Explore your inner world with me </p>
+    </header>
+
+    <section class="controls">
+      <div class="buttons">
+        <button onclick="setMood('Happy')">😊 Happy</button>
+        <button onclick="setMood('Sad')">😢 Sad</button>
+        <button onclick="setMood('Angry')">😡 Angry</button>
+        <button onclick="setMood('Calm')">😌 Calm</button>
+      </div>
+      <div class="slider-group">
+        <label for="intensitySlider">🎚 Intensity</label>
+        <input type="range" id="intensitySlider" min="10" max="200" value="50" />
+      </div>
+      <button id="saveBtn">📷 Save Image</button>
+      <button id="audioToggle">🔇 Toggle Music</button>
+      <button id="themeToggle">🌙 Toggle Theme</button>
+    </section>
+
+    <section class="ai-controls">
+      <input type="text" id="moodInput" placeholder="How are you feeling today?" />
+      <button id="textMoodBtn">💬 Analyze Mood</button>
+      <button id="faceMoodBtn">📷 Detect Mood from Face</button>
+    </section>
+
+    <div id="canvas-container"></div>
+  </div>
+
+  <script src="sketch.js"></script>
+</body>
+</html>
