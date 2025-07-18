@@ -60,11 +60,11 @@ Add user customization options (e.g., palette, shape type)
 
 📂 Project Structure
 
-/generative-mood-art
-│
-├── index.html         # Main HTML file
-├── style.css          # Styling and animations
-└── script.js          # Generative art logic
+generative-mood-art
+
+-index.html  # Main HTML file
+-style.css   # Styling and animations
+-script.js   # Generative art logic
 
 🤝 Contributing
 
