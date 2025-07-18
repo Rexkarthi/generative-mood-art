@@ -28,7 +28,8 @@ JavaScript – for logic and dynamic art generation
 
 1. Clone the repository:
 
-git clone https://github.com/your-username/generative-mood-art.git
+git clone 📌
+https://github.com/Rexkarthi/generative-mood-art.git
 
 
 2. Open index.html in your browser to start creating art!
